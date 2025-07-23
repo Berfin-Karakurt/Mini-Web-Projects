@@ -1,0 +1,56 @@
+/* Center across the entire page */
+.container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically */
+  height: 100vh;           /* Occupies full page height */
+  background-color: #ffc116; /* Optional background */
+}
+
+/* Appearance of the squares */
+.Board {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Slight shadow effect */
+  border-radius: 10px; /* Rounds the corners */
+  flex-wrap: wrap; /* Prevents overflow of cells */
+  display: flex; /* Layout using flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 50px; /* Square width */
+  height: 50px; /* Square height */
+  background-color: #ffb703; /* Square background color */
+  border: 2.5px solid #fb8500; /* Square border */
+  font-size: 2em; /* Font size */
+  cursor: pointer; /* Changes cursor on hover */
+  color : #fb8500; /* Text color */
+}
+
+.row {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.game-over {
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  font-size: 2em; /* Font size */
+  color : #fb8500; /* Text color */
+}
+
+.icon-x {
+  color: #fb6000;  /* Orange */
+  font-size: 32px;
+}
+
+.icon-o {
+  color: #3498db;  /* Blue */
+  font-size: 32px;
+}
+
+/* Style for the title */
+.title {
+  font-size: 2em; /* Title font size */
+  color: #535353; /* Title text color */
+  text-align: center; /* Center the title */
+  margin-bottom: 500px; /* Space between title and game board */
+}
