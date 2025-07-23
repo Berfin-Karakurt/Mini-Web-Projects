@@ -1,0 +1,92 @@
+.Background {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #deeba9;
+  opacity: 0.7;
+}
+
+.Form-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Burada label ve input yan yana olacak */
+.Input-Row {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* label ile input arasına boşluk */
+}
+
+.Text-Style {
+  text-align: center;
+  font-size: calc(20px + 2vmin);
+  color: #72a091;
+  margin-top: 10px;  /* 🆕 üst boşluğu azaltır */
+}
+
+
+.Input-Box {
+  height: 35px;
+  width: 120px;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #72a091;
+
+  font-size: 20px;
+  color: #004c8c;
+
+  text-transform: capitalize; /* 💡 Her kelimenin ilk harfi büyük olur */
+}
+
+
+.Input-Button {
+  margin-top: 15px;
+  border-radius: 6px;
+  color: #ffffff;
+  border: none;
+  height: 30px;
+  width: 100px;
+  background-color: #60a0a3;
+}
+
+button:hover {
+  background-color: #659c8b;
+}
+
+.Name-Counter {
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  background-color: #ffffffc0;
+  color: #333;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+
+.wave {
+  animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s;        /* Change to speed up or slow down */
+  animation-iteration-count: infinite;  /* Never stop waving :) */
+  transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate( 0.0deg) }
+   10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+   20% { transform: rotate(-8.0deg) }
+   30% { transform: rotate(14.0deg) }
+   40% { transform: rotate(-4.0deg) }
+   50% { transform: rotate(10.0deg) }
+   60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+  100% { transform: rotate( 0.0deg) }
+}
